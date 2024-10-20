@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <center> <h1>User Register</h1>
+</center>    <br>
+    <br><hr>
+    <form autocomplete="off" method="get" action="sample.js" style="align:center;">
+        <table align="center" border="0">
+                <tr>
+                    <td>First Name * :</td>
+                    <td><input type="text" name="name" required autofocus  placeholder="Enter the name"></td>
+                </tr>
+                <tr>
+                    <td>Last Name :</td>
+                    <td><input type="text" name="lname"></td>
+                </tr>
+                <tr><td>Age :</td>
+                    <td><input type="number" min="18" max="65" step="1" name="age"></td>
+                </tr>
+                <tr>
+                    <td>Join Date :</td>
+                    <td><input type="date" name="date"></td>
+                </tr>
+                <tr>
+                    <td>Phone Number * :</td>
+                    <td><input type="text" pattern="\d{10}" required/></td>
+                </tr>
+                <tr>
+                    <td>E-mail</td>
+                    <td><input type="email"></td>
+                </tr>
+                <td>Gander :</td>
+                <td>
+                    Male<input type="radio" value="male" name="gender">
+                    Female<input type="radio" value="female" name="gender"></td>
+            </tr>
+            <tr>
+                <td>Qualification :</td>
+                <td><select>
+                    <option>MCA</option>
+                    <option value="M.COM">M.COM</option>
+                    <option value="BE">B.E</option>
+                    <option value="me">M.E</option>
+                </select></td>
+            </tr>
+            <tr>
+                 <td>hobbies :</td><td>
+                 Reading Book :
+                 <input type="checkbox"><br>
+                 Making friends :<input type="checkbox"><br>
+                 Playing Game :<input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Address :</td> <td><textarea rows="7" cols="18"></textarea></td>
+            </tr>
+            <tr><td>File :</td>
+                <td><input type="file" multiple="true"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="submit"></td>
+                <td><input type="reset" name="reset" id="reset"></td>
+            </tr>
+            </table>
+    </form>
+</body>
+</html>
